@@ -24,27 +24,26 @@ The goal was to design a **normalized relational database**, perform **ETL and d
 | **Query Types** | DDL, DML, DQL, Joins, Aggregations, Subqueries |
 
 ---
-
 ## 🧩 Project Structure
 
-social-media-engagement-sql/
-│
-├── database_setup.sql # Database creation, schema, and data import
-├── analytics_queries.sql # Analytical SQL queries and insights
-│
-├── assets/
-│ ├── database_schema_diagram.png # Entity Relationship Diagram
-│ └── entity_relationship_summary.docx # Full documentation of schema and analysis
-│
-├── data/ # Raw data files (used for import)
-│ ├── users.csv
-│ ├── photos.csv
-│ ├── likes.csv
-│ ├── follows.csv
-│ ├── comments.csv
-│ └── tags.csv
-│
-└── README.md # Project documentation
+| Path / File | Description |
+|--------------|-------------|
+| `social-media-engagement-sql/` | **Root Project Folder** |
+| ├── `database_setup.sql` | Database creation, schema, and data import |
+| ├── `analytics_queries.sql` | Analytical SQL queries and insights |
+| ├── `assets/` | Folder containing ER diagram and documentation |
+| │ ├── `database_schema_diagram.png` | Entity Relationship Diagram |
+| │ └── `entity_relationship_summary.docx` | Full documentation of schema and analysis |
+| ├── `data/` | Raw data files used for import |
+| │ ├── `users.csv` | Users table data |
+| │ ├── `photos.csv` | Photos table data |
+| │ ├── `likes.csv` | Likes table data |
+| │ ├── `follows.csv` | Follows table data |
+| │ ├── `comments.csv` | Comments table data |
+| │ └── `tags.csv` | Tags table data |
+| └── `README.md` | Project documentation |
+
+---
 
 **ER Diagram:**  
 ![Database ER Diagram](database_schema_diagram.png)
@@ -68,15 +67,15 @@ social-media-engagement-sql/
 git clone https://github.com/<your-username>/social-media-engagement-sql.git
 cd social-media-engagement-sql
 
-2️⃣ Open in MySQL Workbench
-3️⃣ Execute the Setup File
-SOURCE database_setup.sql;
+Open in MySQL Workbench
+- Execute the Setup File
+- SOURCE database_setup.sql;
 
-4️⃣ Enable Local Import (if needed)
-SET GLOBAL local_infile = 1;
+-- Enable Local Import (if needed)
+-- SET GLOBAL local_infile = 1;
 
-5️⃣ Run Analytical Queries
-SOURCE analytics_queries.sql;
+Run Analytical Queries
+- SOURCE analytics_queries.sql;
 
 
 Then, explore results section by section to view user, engagement, and content insights.
